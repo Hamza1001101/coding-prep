@@ -12,20 +12,41 @@
  * @param {*str} str 
  */
 
+// function palindrome(str) {
+//   if (str.split("").reverse().join("") === str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+/**
+ * * Stephen's solution
+ * @param {*} str 
+ */
+// function palindrome(str) {
+//     const reversed = str.split("").reverse().join("");
+//     return str === reversed;
+// }
+
+
+/**
+ * * This is not the best solution, because it compares twice. 
+ * @param {*} str 
+ */
 function palindrome(str) {
-  if (str.split("").reverse().join("") === str) {
-    return true;
-  } else {
-    return false;
-  }
+  return str.split("").every((char, i) => {
+    return char === str[str.length - i - 1];
+  });
 }
+
 
 /**
  * * ES6 + Ternary operation, --> shorten and cleaner
  * @param {str} str
  */
-const palindrome = (str) => {
-  return str.split("").reverse().join("") === str ? true : false;
-};
+// const palindrome = (str) => {
+//   return str.split("").reverse().join("") === str ? true : false;
+// };
 
 module.exports = palindrome;
