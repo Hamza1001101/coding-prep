@@ -7,6 +7,25 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+/**
+ * * My first though. 
+ * @param {*str} str 
+ */
+
+function palindrome(str) {
+  if (str.split("").reverse().join("") === str) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * * ES6 + Ternary operation, --> shorten and cleaner
+ * @param {str} str
+ */
+const palindrome = (str) => {
+  return str.split("").reverse().join("") === str ? true : false;
+};
 
 module.exports = palindrome;
