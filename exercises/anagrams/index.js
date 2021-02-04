@@ -8,6 +8,23 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+/**
+ * * Using the built in sort-method
+ * @param {*} stringA 
+ * @param {*} stringB 
+ */
+function anagrams(stringA, stringB) {
+  return cleanUpFunction(stringA) === cleanUpFunction(stringB);    
+}
+function cleanUpFunction(str) {
+  return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+}
+
+/**
+ * * first solution and a bit of more complicated one. 
+ * @param {*} stringA 
+ * @param {*} stringB 
+ */
 function anagrams(stringA, stringB) {
   const aCharMap = buildCharMap(stringA);
   const bCharMap = buildCharMap(stringB);
