@@ -32,11 +32,17 @@ const chunk = (array, size) => {
   return chunked;
 };
 
-
+/**
+ * * We using the slice method here. 
+ * @param {*} array 
+ * @param {*} size 
+ */
 function chunk(array, size) {
   const chunked = [];
 
-  let index = 0;
+  //* index variable. this is going to be changing over time
+    let index = 0;
+    
   while (index < array.length) {
     chunked.push(array.slice(index, index + size));
 
