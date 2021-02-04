@@ -12,13 +12,13 @@
  * @param {*str} str 
  */
 
-// function palindrome(str) {
-//   if (str.split("").reverse().join("") === str) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+function palindrome(str) {
+  if (str.split("").reverse().join("") === str) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * * Stephen's solution
