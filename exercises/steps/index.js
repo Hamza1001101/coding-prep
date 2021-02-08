@@ -17,6 +17,11 @@
 //       '### '
 //       '####'
 
+
+/**
+ * First solution
+ * @param {n} n 
+ */
 function steps(n) {
   for (let row = 0; row < n; row++) {
     let stair = "";
@@ -31,5 +36,6 @@ function steps(n) {
     console.log(stair);
   }
 }
+
 
 module.exports = steps;
