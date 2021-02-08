@@ -24,10 +24,10 @@ function palindrome(str) {
  * * Stephen's solution
  * @param {*} str 
  */
-// function palindrome(str) {
-//     const reversed = str.split("").reverse().join("");
-//     return str === reversed;
-// }
+function palindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
 
 
 /**
