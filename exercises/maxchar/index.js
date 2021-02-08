@@ -7,7 +7,7 @@
 
 /**
  * * This particular problem can be applied to many
- * * other problems
+ * * other problems (String)
  * @param {*} str
  */
 function maxChar(str) {
