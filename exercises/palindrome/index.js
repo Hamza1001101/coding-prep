@@ -45,8 +45,8 @@ function palindrome(str) {
  * * ES6 + Ternary operation, --> shorten and cleaner
  * @param {str} str
  */
-// const palindrome = (str) => {
-//   return str.split("").reverse().join("") === str ? true : false;
-// };
+const palindrome = (str) => {
+  return str.split("").reverse().join("") === str ? true : false;
+};
 
 module.exports = palindrome;

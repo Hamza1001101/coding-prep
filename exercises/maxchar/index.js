@@ -16,16 +16,16 @@ function maxChar(str) {
   let maxChar = "";
   for (const char of str) {
     /**
-     * * Nice and neat of doing it. 
-     * * boolean logic.
-     * 
-     * * we using the OR-operator to see if that value exists yet. 
-     * * So one way of handling this eloquently in this particular 
-     * * case would be to say if adding one onto this number 
+     * * Nice and neat of doing it.
+     * * boolean logic
+     *
+     * * we using the OR-operator to see if that value exists yet.
+     * * So one way of handling this eloquently in this particular
+     * * case would be to say if adding one onto this number
      * * resulted in a null value that's fine.
      * * Then instead assign the value of 1 like so.
-      ** So if this is falsie then otherwise assign one to char 
-      ** at char and we end up with the same objecT       
+     ** So if this is falsie then otherwise assign one to char
+     ** at char and we end up with the same objecT
      */
     charMap[char] = charMap[char] + 1 || 1;
 
