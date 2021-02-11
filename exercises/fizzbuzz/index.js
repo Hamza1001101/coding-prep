@@ -5,7 +5,7 @@
 // of five print “buzz”. For numbers which are multiples
 // of both three and five print “fizzbuzz”.
 // --- Example
-//   fizzBuzz(5);
+//   fizzBuzz(5); 
 //   1
 //   2
 //   fizz
