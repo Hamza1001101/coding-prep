@@ -14,7 +14,7 @@ function capitalize(str) {
     if (str[i - 1] === ' ') {
       result += str[i].toUpperCase();
     } else {
-      result += str[i];
+      result += str[i]; 
     }
   }
 

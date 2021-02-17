@@ -1,4 +1,4 @@
-const chunk = require('./index');
+import chunk from "./index";
 
 test('function chunk exists', () => {
   expect(typeof chunk).toEqual('function');
