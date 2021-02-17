@@ -3,7 +3,7 @@
 // commonly used in the string.
 // --- Examples
 // maxChar("abcccccccd") === "c"
-// maxChar("apple 1231111") === "1"
+// maxChar("apple 1231111") === "1" 
 
 /**
  * * This particular problem can be applied to many
@@ -46,6 +46,26 @@ function maxChar(str) {
     }
     return maxChar;
   }
-}
+} 
 
-module.exports = maxChar;
+const getMaxChars = (str) => {
+  const charMap = {};
+
+  for (let char of str) {
+    if (!charMap[char]) charMap[char] = 1;
+    else charMap[char]++;
+  }
+
+  let maxChar = "";
+  let max = 0;
+
+  for (const key in charMap) {
+    if (charMap[key] > max) {
+      max = charMap[key];
+      maxChar = key;
+    }
+  }
+  return maxChar;
+};
+
+module.exports = getMaxChars;
