@@ -22,7 +22,7 @@
  * * Another complicated way of implementing it.
  * * a bit of more complicated
  * @param {*} str
- */
+ */ 
 
 function reverse(str) {
     return str.split('').reduce((rev, char) => char + rev, '')
