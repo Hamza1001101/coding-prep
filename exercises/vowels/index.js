@@ -19,4 +19,15 @@ function vowels(str) {
   return counter;
 }
 
-module.exports = vowels;
+
+/**
+ * * Regex 
+ * @param {*} str 
+ */
+
+const vowelsRegex = (str) => {
+  const matches = str.match(/[aiueo]/gi);
+  return matches ? matches.length : 0;
+}; 
+
+module.exports = vowelsRegex;
