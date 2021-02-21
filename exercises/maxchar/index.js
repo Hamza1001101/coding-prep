@@ -33,7 +33,7 @@ function maxChar(str) {
      * Another logic would be
      */
     if (!charMap[char]) {
-      charMap[char] = 1;
+      charMap[char] = 1; 
     } else {
       charMap[char]++;
     }
