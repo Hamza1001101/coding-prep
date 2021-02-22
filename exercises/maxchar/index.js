@@ -28,7 +28,7 @@ function maxChar(str) {
      ** at char and we end up with the same objecT
      */
     charMap[char] = charMap[char] + 1 || 1;
-
+ 
     /**
      * Another logic would be
      */
