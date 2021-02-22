@@ -33,6 +33,11 @@ function reverseInt(n) {
 //     }
 //   }
 //   return parseInt(result, 10);
-// }
+// 
+
+/**
+ * * There may be some constraints when implementing this question. 
+ */
+
 
 module.exports = reverseInt;
