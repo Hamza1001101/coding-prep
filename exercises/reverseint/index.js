@@ -38,6 +38,11 @@ function reverseInt(n) {
 /**
  * * There may be some constraints when implementing this question. 
  */
+const reverseInteger = num => {
+  const toStr = Math.abs(num).toString().split('').reverse().join('')
 
+  if (toStr > Math.pow(2, 31)) return 0
+  return parseInt(toStr, 10) * Math.sign(num)
+}
 
 module.exports = reverseInt;
