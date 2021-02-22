@@ -36,7 +36,8 @@ function reverseInt(n) {
 // 
 
 /**
- * * There may be some constraints when implementing this question. 
+ * * There may be some constraints when implementing this question.
+ * ! this is just useful when dealing with nunbers 
  */
 const reverseInteger = num => {
   const toStr = Math.abs(num).toString().split('').reverse().join('')
