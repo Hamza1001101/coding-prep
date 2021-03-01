@@ -28,4 +28,26 @@ function maxChar(str) {
   return maxChar;
 }
 
+/**
+ * * Another way of implementing this function 
+ * * SIMPLER WAY
+ */
+
+function maxChar(str) {
+  const charMap = {}
+  let max = 0
+  let maxChar = ''
+
+  for (let char of str) {
+    charMap[char] = charMap[char] + 1 || 1
+    
+    if (charMap[char] > max) {
+      max = charMap[char]
+      maxChar = char
+
+    }
+  }
+  return maxChar
+ }
+
 module.exports = maxChar;
