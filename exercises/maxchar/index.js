@@ -48,7 +48,24 @@ function maxChar(str) {
   }
 } 
 
-const getMaxChars = (str) => {
+const getMaxChars = str => {
+  const maxChar = {}
+
+  for (let i = 0; i < str.length; i++) {
+    maxChar[str[i]] = maxChar[str[i]] +1 || 1
+  }
+  let maxCharecter = ''
+  let max = 0
+  for (let char in maxChar) {
+    if (maxChar[char] > max) {
+      max = maxChar[char]
+      maxCharecter  = char;
+    }
+  }
+  return maxCharecter
+}
+
+/*const getMaxChars = (str) => {
   const charMap = {};
 
   for (let char of str) {
@@ -66,6 +83,6 @@ const getMaxChars = (str) => {
     }
   }
   return maxChar;
-};
+}; */
 
 module.exports = getMaxChars;
