@@ -36,7 +36,7 @@ function maxChar(str) {
       charMap[char] = 1; 
     } else {
       charMap[char]++;
-    }
+    } 
   }
 
   for (let key in charMap) {
