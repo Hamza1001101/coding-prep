@@ -30,4 +30,4 @@ const vowelsRegex = (str) => {
   return matches ? matches.length : 0;
 }; 
 
-module.exports = vowelsRegex;
+module.exports = vowels;

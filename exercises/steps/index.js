@@ -34,7 +34,7 @@
 //   }
 
 //   if (stair.length <= row) {
-//     stair += "#";
+//     stair += "#"; 
 //   } else {
 //     stair += "";
 //   }

@@ -34,35 +34,27 @@ const chunk = (array, size) => {
   return chunked;
 };
 
-const chunck2 = (arr, size) => {
-  let index = 0;
+
+
+/**
+ * * We using the slice method here. 
+ * @param {*} array 
+ * @param {*} size 
+ */
+function chunk1(array, size) {
   const chunked = [];
-  while (index < arr.length) {
-    chunked.push(arr.slice(index, index + size));
+
+  //* index variable. this is going to be changing over time
+    let index = 0;
+    
+  while (index < array.length) {
+    chunked.push(array.slice(index, index + size));
+
+    //* increment by size not by one
     index += size;
   }
   return chunked;
-};
-
-// /**
-//  * * We using the slice method here. 
-//  * @param {*} array 
-//  * @param {*} size 
-//  */
-// function chunk(array, size) {
-//   const chunked = [];
-
-//   //* index variable. this is going to be changing over time
-//     let index = 0;
-    
-//   while (index < array.length) {
-//     chunked.push(array.slice(index, index + size));
-
-//     //* increment by size not by one
-//     index += size;
-//   }
-//   return chunked;
-//}
+}
 
 
-module.exports = chunck2;
+module.exports = chunk;
