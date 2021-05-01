@@ -20,17 +20,17 @@ class Queue {
     this.temp = new Stack();
   }
   add(item) {
-    while (this.s1.data.length > 0) {
+    while (this.s1.peek()) {
       this.temp.push(this.s1.pop());
     }
     this.temp.push(item);
-    while (this.temp.data.length > 0) {
+    while (this.temp.peek()) {
       this.s1.push(this.temp.pop());
     }
   }
 
   remove() {
-    if (!this.s1.data.length) return undefined;
+    if (!this.s1.peek()) return undefined;
     else return this.s1.pop();
   }
   peek() {
