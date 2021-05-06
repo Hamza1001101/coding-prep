@@ -12,7 +12,7 @@ describe('Node', () => {
     expect(n.data).toEqual('a');
     expect(n.children.length).toEqual(0);
   });
-
+ 
   test('Node can add children', () => {
     const n = new Node('a');
     n.add('b');

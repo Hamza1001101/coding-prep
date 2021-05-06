@@ -19,6 +19,9 @@ class Node {
     //*create a new node and add it to the current nodes children array
     this.children.push(new Node(item));
   }
+  remove(item) {
+    this.children = this.children.filter((node) => node.data !== item);
+  }
 }
 
 class Tree {}
