@@ -15,6 +15,10 @@ class Node {
     this.data = value;
     this.children = [];
   }
+  add(item) {
+    //*create a new node and add it to the current nodes children array
+    this.children.push(new Node(item));
+  }
 }
 
 class Tree {}
